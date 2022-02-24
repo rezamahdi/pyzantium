@@ -12,4 +12,5 @@ jobs:
       - run: |
           pip install setuptools
           pip install build
+          pip install wheel
           python -m build -n
