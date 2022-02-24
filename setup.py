@@ -23,6 +23,7 @@ setuptools.setup(
     extras_require={
         "dev": ["pytest", "pytest-cov", "pytest-mock"],
         "fastapi": ["fastapi"],
+        "leveldb": ["plyvel"],
         "doc": "sphinx",
     },
     entry_points={
