@@ -18,8 +18,14 @@ class DiskStorage(Storage):
            name is infered from two beggining letters of block's hash.
 
         #. A file named `index` is stored in root directory of storage that is
-           a simple text file with hashes of blocks sorted by time in it (most 
+           a simple text file with hashes of blocks sorted by time in it (most
            recent last) to accelerate access to blocks
+    
+    :param path: Path to store blocks and index.
+    :param creeate: Whether to create a new storage or open an existing one.
+    :param error_if_missing:
+       If this param is set to ``True`` and a storage allready exist in
+       ``path``, then an exception will raise.
     """
 
     def __init__(
@@ -44,6 +50,6 @@ class DiskStorage(Storage):
             mkdir(self._path)
 
         self._index_file = open(self._path + "/index", "r")
-    
+
     def __getitem__(self, hash: bytes):
         return super().__getitem__(hash)

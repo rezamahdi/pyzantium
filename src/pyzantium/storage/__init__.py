@@ -1,3 +1,18 @@
+"""
+``storage`` module contains classes to store blocks and other information about
+a blockchain. Conceptually, storage has two parts:
+
+#. A storage pool that just stores raw blocks.
+#. An index to track the squence of blocks by hash.
+
+Altogh raw filesystem storing of blocks in most cases is enough, but someone
+may need to store blocks (or chain's index) in a database, leveldb, i.e.
+To support this customization, pyzantium separates blockchain from it's storage.
+
+Note that this class is an abstract class and doesn't contain any implementation
+so is not instantiniatable.
+"""
+
 from abc import ABC, abstractmethod
 
 
