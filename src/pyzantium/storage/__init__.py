@@ -7,7 +7,12 @@ class Storage(ABC):
 
     All storage mechanisms must implement this base class.
     This class provides an abstraction to separate storage from higher level
-    blockchain machinary.
+    blockchain machinary. Note that objects of ``Storage``'s subclass
+    is not intended to be used directly by user.
+
+    :param name: Name of storage. This name is not name of blockchain it is
+                 just a name for storage class.
+    :type name: str
     """
 
     def __init__(self, name: str) -> None:
@@ -32,5 +37,6 @@ class Storage(ABC):
     @abstractmethod
     def __len__(self) -> int:
         ...
+
 
 from .disk import DiskStorage
