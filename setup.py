@@ -1,4 +1,3 @@
-from importlib_metadata import entry_points
 import setuptools
 
 setuptools.setup(
