@@ -24,6 +24,8 @@ classes in order to be highly customizable.
    :maxdepth: 2
    :caption: Contents:
 
+   api/index.rst
+
 Indices and tables
 ==================
 
