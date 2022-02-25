@@ -8,4 +8,5 @@ Api reference of pyzantium is presented here
 
    storage.rst
    chain.rst
+   block.rst
    verify.rst
