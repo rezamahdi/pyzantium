@@ -23,12 +23,9 @@ class Block:
         # comparing hashes is enough
         if isinstance(other, Block):
             return self._hash == other._hash
-        else:
-            raise TypeError(
-                "Object of type {} is not a Block or subclass of it".format(
-                    other.__class__
-                )
-            )
+        raise TypeError(
+            "Object of type {} is not a Block or subclass of it".format(other.__class__)
+        )
 
 
 class BlockSerializer(ABC):
