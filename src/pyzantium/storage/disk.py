@@ -1,8 +1,9 @@
 from nis import match
-from . import Storage
-from typing import Union
-from pathlib import Path
 from os import mkdir
+from pathlib import Path
+from typing import Union
+
+from . import Storage
 
 
 class DiskStorage(Storage):

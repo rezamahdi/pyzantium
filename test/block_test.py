@@ -1,5 +1,7 @@
-from pytest import mark, fixture
 import hashlib
+
+from pytest import fixture
+from pytest import mark
 
 
 @fixture

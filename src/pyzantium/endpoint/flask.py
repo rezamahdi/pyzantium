@@ -1,5 +1,6 @@
-from . import Endpoint
 from flask import Flask
+
+from . import Endpoint
 
 
 class FlaskEndpoint(Endpoint):

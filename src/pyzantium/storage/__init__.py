@@ -12,8 +12,8 @@ To support this customization, pyzantium separates blockchain from it's storage.
 Note that this class is an abstract class and doesn't contain any implementation
 so is not instantiniatable.
 """
-
-from abc import ABC, abstractmethod
+from abc import ABC
+from abc import abstractmethod
 
 
 class Storage(ABC):

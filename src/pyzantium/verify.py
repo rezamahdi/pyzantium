@@ -1,9 +1,11 @@
-from abc import ABC, abstractmethod
+from abc import ABC
+from abc import abstractmethod
 from typing import Any
 
-from cryptography.hazmat.primitives.asymmetric import ec, utils
-from cryptography.hazmat.primitives import hashes
 from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import ec
+from cryptography.hazmat.primitives.asymmetric import utils
 
 
 class Verifier(ABC):

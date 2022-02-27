@@ -1,6 +1,8 @@
 from ctypes import Union
-from cryptography.hazmat.primitives import hashes
 from typing import Union
+
+from cryptography.hazmat.primitives import hashes
+
 from .block import Block
 from .storage import Storage
 
